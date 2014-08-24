@@ -38,7 +38,13 @@ var Menu = React.createClass({
                 width: document.getElementById("mainRow").clientWidth+"px",
                 'background': 'white'
             }
-
+            var liStyle = {
+                'float': 'left',
+                'width': width+"px",
+                'padding': '10px 5px',
+                'borderTop': '0',
+                'borderBottom': '1px solid black'
+            }
         }
         else {
             var divStyle= {
@@ -48,7 +54,13 @@ var Menu = React.createClass({
                 width: document.getElementById("mainRow").clientWidth+"px",
                 'background': 'white'
             }
-
+            var liStyle = {
+                'float': 'left',
+                'width': width+"px",
+                'padding': '10px 5px',
+                'borderTop': '1px solid black',
+                'borderBottom': '1px solid black'
+            }
         }
 
         var ulStyle = {
@@ -60,13 +72,7 @@ var Menu = React.createClass({
             'padding': '0px',
             'textAlign': 'center'
         }
-        var liStyle = {
-            'float': 'left',
-            'width': width+"px",
-            'padding': '10px 5px',
-            'borderTop': '1px solid black',
-            'borderBottom': '1px solid black'
-        }
+
 
 
 
