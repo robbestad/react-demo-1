@@ -46,19 +46,19 @@ jQuery(function ($) {
         $(".nav").css("opacity",1);
     });
 
-    $(document).ready(function () {
-
-    $(window).bind('load', function () {
-        parallaxInit();
-    });
-    var headerParallax = jQuery('.masthead');
-
-    function parallaxInit() {
-        headerParallax.parallax("50%", 1);
-    }
-
-    parallaxInit();
-    });
+//    $(document).ready(function () {
+//
+//    $(window).bind('load', function () {
+//        parallaxInit();
+//    });
+//    var headerParallax = jQuery('.masthead');
+//
+//    function parallaxInit() {
+//        headerParallax.parallax("50%", 1);
+//    }
+//
+//    parallaxInit();
+//    });
 
 
 });

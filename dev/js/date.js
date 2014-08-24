@@ -13,8 +13,12 @@ var DateApplication = React.createClass({displayName: 'DateApplication',
 });
 var start = new Date().getTime();
 setInterval(function() {
+
+    var seconds =new Date().getTime() - start;
+    $(".masthead").css("top",-$(window).scrollTop()/2+"px");
+
     React.renderComponent(
-        DateApplication({elapsed: new Date().getTime() - start}),
+        DateApplication({elapsed: seconds}),
         document.getElementById('container')
     );
 }, 50);
