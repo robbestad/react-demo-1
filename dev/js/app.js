@@ -30,9 +30,10 @@ jQuery(function ($) {
                 self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
                 self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
         ];
-        $(".masthead").css("opacity",0);
+        $("#masthead").css("opacity",0);
+        $("#masthead").css("backgroundColor","white");
         $(".row").css("opacity",0);
-        $(".nav").css("opacity",0);
+        $("#menu").css("opacity",0);
         $("html").css("position","fixed");
         $(".modal-close").css("zIndex","9999");
     });
@@ -41,9 +42,9 @@ jQuery(function ($) {
         $("html").css("position","relative");
         window.scrollTo(scrollPosition[0], scrollPosition[1]);
         $("body").css("opacity",1);
-        $(".masthead").css("opacity",1);
+        $("#masthead").css("opacity",1);
         $(".row").css("opacity",1);
-        $(".nav").css("opacity",1);
+        $("#menu").css("opacity",1);
     });
 
 //    $(document).ready(function () {

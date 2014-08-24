@@ -19,6 +19,7 @@ var paths = {
     scripts: 'dev/js/**/*',
     jslibs: [
         'bower_components/jquery/dist/jquery.min.js',
+//        'bower_components/zepto/zepto.min.js',
         'bower_components/react/react.min.js',
         'bower_components/barekit/js/barekit.min.js'
     ],
