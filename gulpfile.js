@@ -19,10 +19,10 @@ var paths = {
     scripts: 'dev/js/**/*',
     jslibs: [
         'bower_components/jquery/dist/jquery.min.js',
-        'bower_components/react/react.min.js',
-        'bower_components/barekit/js/barekit.min.js',
         'bower_components/stickUp/stickUp.min.js',
-        'dev/js/jquery.parallax-1.1.3.js'
+        'dev/js/jquery.parallax-1.1.3.js',
+        'bower_components/react/react.min.js',
+        'bower_components/barekit/js/barekit.min.js'
     ],
     images: 'dev/img/**/*',
     jsx: 'dev/jsx/**/*',
