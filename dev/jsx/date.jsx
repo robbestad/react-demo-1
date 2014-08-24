@@ -21,4 +21,4 @@ setInterval(function() {
         <DateApplication elapsed={seconds} />,
         document.getElementById('container')
     );
-}, 50);
+}, 0);
