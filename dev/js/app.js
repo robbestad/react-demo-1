@@ -46,6 +46,7 @@ jQuery(function ($) {
         $(".nav").css("opacity",1);
     });
 
+    $(document).ready(function () {
 
     $(window).bind('load', function () {
         parallaxInit();
@@ -57,6 +58,7 @@ jQuery(function ($) {
     }
 
     parallaxInit();
+    });
 
 
 });
