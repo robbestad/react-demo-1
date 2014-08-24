@@ -24,7 +24,7 @@ var Masthead = React.createClass({
     tick: function() {
         var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         var width=document.body.clientWidth;
-        this.setProps({scrollTop: -scrollTop, logoTop:scrollTop, width: width});
+        this.setProps({scrollTop: -scrollTop, logoTop:scrollTop/1.75, width: width});
     },
     render: function() {
         var divStyle= {
@@ -52,14 +52,12 @@ var Masthead = React.createClass({
         }
 
         return  <div style={divStyle}>
-             <h1 style={logoStyle}>React</h1>
+             <h1 style={logoStyle}>{this.props.title}</h1>
             </div>;
     }
-
-
 });
 
 React.renderComponent(
-    <Masthead />,
+    <Masthead title="React" />,
         document.getElementById('masthead')
 );
