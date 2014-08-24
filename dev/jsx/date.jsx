@@ -1,7 +1,31 @@
 /**
  * @jsx React.DOM
  */
+var SetIntervalMixin = {
+    componentWillMount: function() {
+        this.intervals = [];
+    },
+    setInterval: function() {
+        this.intervals.push(setInterval.apply(null, arguments));
+    },
+    componentWillUnmount: function() {
+        this.intervals.map(clearInterval);
+    }
+};
+
 var Masthead = React.createClass({
+    mixins: [SetIntervalMixin], // Use the mixin
+    componentDidMount: function() {
+        this.setInterval(this.tick, 1); // Call a method on the mixin
+    },
+    componentDidMount: function() {
+        this.setInterval(this.tick, 0); // Call a method on the mixin
+    },
+    tick: function() {
+        var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        var width=document.body.clientWidth;
+        this.setProps({scrollTop: -scrollTop, logoTop:scrollTop, width: width});
+    },
     render: function() {
         var divStyle= {
             position: 'absolute',
@@ -35,11 +59,7 @@ var Masthead = React.createClass({
 
 });
 
-setInterval(function() {
-    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    var width=document.body.clientWidth;
-    React.renderComponent(
-        <Masthead width={width} scrollTop={-scrollTop} logoTop={$(window).scrollTop()/1.75} />,
+React.renderComponent(
+    <Masthead />,
         document.getElementById('masthead')
-    );
-}, 0);
+);
