@@ -16,11 +16,14 @@ var react = require('gulp-react');
 
 
 var paths = {
-    scripts: ['bower_components/jquery/dist/jquery.js',
+    scripts: 'dev/js/**/*',
+    jslibs: [
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/react/react.min.js',
         'bower_components/barekit/js/barekit.min.js',
         'bower_components/stickUp/stickUp.min.js',
-        'dev/js/jquery.parallax-1.1.3.js',
-        'dev/js/**/*'],
+        'dev/js/jquery.parallax-1.1.3.js'
+    ],
     images: 'dev/img/**/*',
     jsx: 'dev/jsx/**/*',
     html: 'dev/**/*.html',
@@ -81,6 +84,14 @@ gulp.task('uglifyjs', ['jsx'], function () {
         .pipe(gulp.dest('build/js'));
 });
 
+// Copy all static libraries
+gulp.task('jslibs', function () {
+    return gulp.src(paths.jslibs)
+        .pipe(concat('libs.min.js'))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('build/js'));
+});
+
 // Copy all static images
 gulp.task('images', function () {
     return gulp.src(paths.images)
@@ -100,11 +111,12 @@ gulp.task('images', function () {
 // Rerun the task when a file changes
 gulp.task('watch', function () {
     gulp.watch(paths.scripts, ['uglifyjs']);
+    gulp.watch(paths.jsx, ['uglifyjs']);
     gulp.watch('dev/scss/**/*', ['csscat']);
     gulp.watch(paths.html, ['htmlcat']);
     gulp.watch(paths.images, ['images']);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'htmlcat', 'csscat', 'uglifyjs', 'images', 'jsx', 'webserver']);
+gulp.task('default', ['watch', 'htmlcat', 'csscat', 'uglifyjs', 'images', 'jslibs', 'jsx', 'webserver']);
 

@@ -12,8 +12,6 @@
   </head>
 
   <body>
-    <div id="container">Container for react.
-      <br/>If you can see this, it ain't working.</div>
     <div class="masthead">
       <h1 class="logo animated zoomIn">React</h1>
       <!--<a href="#">-->
@@ -45,6 +43,8 @@
       <div class="row mainRow">
         <div class="lg-4 sm-12 md-12 standout bottomMargin">Web design is not all about creating good looking pages, but it's also about creating a snappy system that doesn't require the user to wait longer than necessary before the page loads.</div>
         <div class="lg-8 sm-12 md-12">
+          <div id="container">Container for react.
+            <br/>If you can see this, it ain't working.</div>
           <p class="">BareKit is a promising new CSS framework that is comparable to Bootstrap in many respects, though it lacks many of the features and functionality that makes Bootstrap attractive.</p>
           <p class="topPadding">However, if you can implement everything you want in a restrictive framework, both you and your users can benefit greatly.</p>
         </div>
@@ -172,10 +172,9 @@
       <div class="clearfix">&nbsp;</div>
     </div>
     <!-- /source -->
-    <script src="js/thirdparty/es5-shim.min.js"></script>
-    <script src="js/thirdparty/es5-sham.min.js"></script>
-    <script src="js/thirdparty/console-polyfill.js"></script>
-    <script type="text/javascript" src="./js/react.js"></script>
+    <!-- Contains jQuery, React and various plugins -->
+    <script type="text/javascript" src="./js/libs.min.js"></script>
+    <!-- Contains compiled js (included jsx) -->
     <script type="text/javascript" src="./js/scripts.min.js"></script>
   </body>
 

@@ -1,12 +1,12 @@
 /**
  * @jsx React.DOM
  */
-var ExampleApplication = React.createClass({displayName: 'ExampleApplication',
+var DateApplication = React.createClass({displayName: 'DateApplication',
     render: function() {
         var elapsed = Math.round(this.props.elapsed  / 100);
         var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
         var message =
-            'React has been successfully running for ' + seconds + ' seconds.';
+            'React is UP & has been successfully running for ' + seconds + ' seconds.';
 
         return React.DOM.p(null, message);
     }
@@ -14,7 +14,7 @@ var ExampleApplication = React.createClass({displayName: 'ExampleApplication',
 var start = new Date().getTime();
 setInterval(function() {
     React.renderComponent(
-        ExampleApplication({elapsed: new Date().getTime() - start}),
+        DateApplication({elapsed: new Date().getTime() - start}),
         document.getElementById('container')
     );
 }, 50);
