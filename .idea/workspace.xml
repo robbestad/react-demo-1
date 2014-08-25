@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fac27060-68ba-492a-a13f-d33d6fd5ece1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/jsx/masthead.jsx" afterPath="$PROJECT_DIR$/dev/jsx/masthead.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/menu.js" afterPath="$PROJECT_DIR$/dev/js/menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/jsx/menu.jsx" afterPath="$PROJECT_DIR$/dev/jsx/menu.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gulp-barekit-responsive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +48,8 @@
       <file leaf-file-name="menu.jsx" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/jsx/menu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25412542" vertical-offset="416" max-vertical-offset="1710">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.22937293" vertical-offset="416" max-vertical-offset="1710">
+              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -590,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/jsx/menu.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25412542" vertical-offset="416" max-vertical-offset="1710">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.22937293" vertical-offset="416" max-vertical-offset="1710">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding />
         </state>
       </provider>
