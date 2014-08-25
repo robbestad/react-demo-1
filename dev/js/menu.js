@@ -31,12 +31,14 @@ var Menu = React.createClass({displayName: 'Menu',
     render: function () {
         var width = ((document.getElementById("mainRow").clientWidth) / 3) - 2;
         var reducify=200;
+        var padding=31;
         var opacity = this.props.scrollTop/reducify <= 1.0 ? this.props.scrollTop/reducify > 0.0 ? this.props.scrollTop/reducify : 0.0 : 1.0;
+
 
         if(this.props.scrollTop>=250){
             opacity=1.0;
+            $(".mainRow").css("paddingTop",padding+'px');
             $(".masthead").css("background",'white');
-            $(".mainRow").css("paddingTop",'65px');
             // this.state.stickified=true;
             var divStyle= {
                 display: 'block',
@@ -54,6 +56,7 @@ var Menu = React.createClass({displayName: 'Menu',
             }
         }
         else {
+            $(".mainRow").css("paddingTop",'0');
            // this.state.stickified=false;
             var divStyle= {
                 display: 'block',
