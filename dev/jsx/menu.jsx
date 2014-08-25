@@ -35,7 +35,7 @@ var Menu = React.createClass({
         var opacity = this.props.scrollTop/reducify <= 1.0 ? this.props.scrollTop/reducify > 0.0 ? this.props.scrollTop/reducify : 0.0 : 1.0;
 
 
-        if(this.props.scrollTop>=250){
+        if(this.props.scrollTop>=241){
             opacity=1.0;
             $(".mainRow").css("paddingTop",padding+'px');
             $(".masthead").css("background",'white');
