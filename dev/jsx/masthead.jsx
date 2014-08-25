@@ -51,7 +51,7 @@ var Masthead = React.createClass({
             position: 'absolute'
         }
 
-        return  <div style={divStyle}>
+        return  <div class="masthead" style={divStyle}>
              <h1 style={logoStyle}>{this.props.title}</h1>
             </div>;
     }

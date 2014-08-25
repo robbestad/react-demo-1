@@ -33,8 +33,10 @@ var Menu = React.createClass({
 
         var opacity = this.props.scrollTop/500 <= 1.0 ? this.props.scrollTop/700 > 0.0 ? this.props.scrollTop/500 : 0.0 : 1.0;
 
-        if(this.props.scrollTop>=242){
+        if(this.props.scrollTop>=222){
             opacity=1.0;
+            $(".mainRow").css("paddingTop",'30px');
+            $(".masthead").css("background",'white');
 
             // this.state.stickified=true;
             var divStyle= {

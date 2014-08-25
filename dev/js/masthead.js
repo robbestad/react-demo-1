@@ -51,7 +51,7 @@ var Masthead = React.createClass({displayName: 'Masthead',
             position: 'absolute'
         }
 
-        return  React.DOM.div({style: divStyle}, 
+        return  React.DOM.div({class: "masthead", style: divStyle}, 
              React.DOM.h1({style: logoStyle}, this.props.title)
             );
     }
