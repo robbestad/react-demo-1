@@ -13,7 +13,7 @@ var SetIntervalMixin = {
     }
 };
 
-var Menu = React.createClass({
+var Menu = React.createClass({displayName: 'Menu',
     mixins: [SetIntervalMixin], // Use the mixin
     componentDidMount: function() {
         this.setInterval(this.tick, 1); // Call a method on the mixin
@@ -25,24 +25,18 @@ var Menu = React.createClass({
         var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         var menuTop = document.getElementById("menu").style.position;
         var width=document.body.clientWidth;
-
         this.setProps({scrollTop: scrollTop, menuTop:menuTop, width: width});
     },
     render: function () {
         var width = ((document.getElementById("mainRow").clientWidth) / 3) - 2;
 
-        var opacity = this.props.scrollTop/500 <= 1.0 ? this.props.scrollTop/700 > 0.0 ? this.props.scrollTop/500 : 0.0 : 1.0;
-
         if(this.props.scrollTop>=332){
-            opacity=1.0;
-
-            // this.state.stickified=true;
             var divStyle= {
                 display: 'block',
                 position: 'fixed',
                 top: '0px',
                 width: document.getElementById("mainRow").clientWidth+"px",
-                background: 'white'
+                'background': 'white'
             }
             var liStyle = {
                 'float': 'left',
@@ -53,7 +47,6 @@ var Menu = React.createClass({
             }
         }
         else {
-           // this.state.stickified=false;
             var divStyle= {
                 display: 'block',
                 position: 'relative',
@@ -70,8 +63,6 @@ var Menu = React.createClass({
             }
         }
 
-
-        $(".content").css("opacity",opacity);
         var ulStyle = {
             'display': 'block',
             'height': '30px',
@@ -85,23 +76,23 @@ var Menu = React.createClass({
 
 
 
-        return <section style={divStyle} id="menu">
-            <div>
-                <ul style={ulStyle}>
-                    <li style={liStyle}><a href="#automation">{this.props.scrollTop}</a>
-                    </li>
-                    <li style={liStyle}><a href="#speed">-{this.props.scrollTop}</a>
-                    </li>
-                    <li style={liStyle}><a href="#source"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>;
+        return React.DOM.section({style: divStyle, id: "menu"}, 
+            React.DOM.div(null, 
+                React.DOM.ul({style: ulStyle}, 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#automation"}, this.props.scrollTop)
+                    ), 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#speed"}, "-", this.props.scrollTop)
+                    ), 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#source"}, "Source")
+                    )
+                )
+            )
+        );
 
     }
 });
 
 React.renderComponent(
-    <Menu title="React" />,
+    Menu({title: "React"}),
     document.getElementById('menu')
 );

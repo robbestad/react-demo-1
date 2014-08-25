@@ -13,7 +13,7 @@ var SetIntervalMixin = {
     }
 };
 
-var Masthead = React.createClass({
+var Masthead = React.createClass({displayName: 'Masthead',
     mixins: [SetIntervalMixin], // Use the mixin
     componentDidMount: function() {
         this.setInterval(this.tick, 1); // Call a method on the mixin
@@ -32,8 +32,8 @@ var Masthead = React.createClass({
             top: this.props.scrollTop,
             left: '0',
             width: '100%',
-            height: '100%',
-//            background: 'url(img/bg.png) no-repeat 50% 50%',
+            height: '270px',
+            background: 'url(img/bg.jpg) no-repeat 50% 50%',
             backgroundSize:'cover',
             transform: 'translateZ(0) scale(1)',
             zIndex: '-1',
@@ -51,13 +51,13 @@ var Masthead = React.createClass({
             position: 'absolute'
         }
 
-        return  <div style={divStyle}>
-             <h1 style={logoStyle}>{this.props.title}</h1>
-            </div>;
+        return  React.DOM.div({style: divStyle}, 
+             React.DOM.h1({style: logoStyle}, this.props.title)
+            );
     }
 });
 
 React.renderComponent(
-    <Masthead title="React" />,
+    Masthead({title: "React"}),
         document.getElementById('masthead')
 );

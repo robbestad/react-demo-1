@@ -23,6 +23,7 @@ body {
       transform-style: preserve-3d;
     }
   */
+  background: url(../img/bg_transluscent.png) repeat;
 }
 
 p {
@@ -37,7 +38,10 @@ hr {
   padding: 10px 20%;
   position: relative;
   top: 240px;
-  background-color: white;
+
+
+  //  background-color: white;
+
 }
 
 .standout {
@@ -51,7 +55,7 @@ hr {
   left: 0;
   width: 100%;
   height: 270px;
-  background: url(../img/bg.jpg) no-repeat 50% 50%;
+  background: url(../img/bg.png) no-repeat 50% 50%;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: -1;

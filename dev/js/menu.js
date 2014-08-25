@@ -13,7 +13,7 @@ var SetIntervalMixin = {
     }
 };
 
-var Menu = React.createClass({
+var Menu = React.createClass({displayName: 'Menu',
     mixins: [SetIntervalMixin], // Use the mixin
     componentDidMount: function() {
         this.setInterval(this.tick, 1); // Call a method on the mixin
@@ -85,23 +85,23 @@ var Menu = React.createClass({
 
 
 
-        return <section style={divStyle} id="menu">
-            <div>
-                <ul style={ulStyle}>
-                    <li style={liStyle}><a href="#automation">{this.props.scrollTop}</a>
-                    </li>
-                    <li style={liStyle}><a href="#speed">-{this.props.scrollTop}</a>
-                    </li>
-                    <li style={liStyle}><a href="#source"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>;
+        return React.DOM.section({style: divStyle, id: "menu"}, 
+            React.DOM.div(null, 
+                React.DOM.ul({style: ulStyle}, 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#automation"}, this.props.scrollTop)
+                    ), 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#speed"}, "-", this.props.scrollTop)
+                    ), 
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#source"})
+                    )
+                )
+            )
+        );
 
     }
 });
 
 React.renderComponent(
-    <Menu title="React" />,
+    Menu({title: "React"}),
     document.getElementById('menu')
 );
