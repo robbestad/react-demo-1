@@ -33,8 +33,9 @@ var Masthead = React.createClass({
             left: '0',
             width: '100%',
             height: '100%',
+            background: 'transparent',
 //            background: 'url(img/bg.png) no-repeat 50% 50%',
-            backgroundSize:'cover',
+//            backgroundSize:'cover',
             transform: 'translateZ(0) scale(1)',
             zIndex: '-1',
             textAlign: 'center'

@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fac27060-68ba-492a-a13f-d33d6fd5ece1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/scss/_app.scss" afterPath="$PROJECT_DIR$/dev/scss/_app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/css/main.css" afterPath="$PROJECT_DIR$/dev/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/masthead.js" afterPath="$PROJECT_DIR$/dev/js/masthead.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/jsx/masthead.jsx" afterPath="$PROJECT_DIR$/dev/jsx/masthead.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/menu.js" afterPath="$PROJECT_DIR$/dev/js/menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/jsx/menu.jsx" afterPath="$PROJECT_DIR$/dev/jsx/menu.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gulp-barekit-responsive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,18 +44,18 @@
       <file leaf-file-name="masthead.jsx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/jsx/masthead.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.26923" vertical-offset="294" max-vertical-offset="1020">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+            <state vertical-scroll-proportion="-10.961538" vertical-offset="285" max-vertical-offset="1035">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menu.jsx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/jsx/menu.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22937293" vertical-offset="416" max-vertical-offset="1710">
-              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state vertical-scroll-proportion="-6.5" vertical-offset="356" max-vertical-offset="1785">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="3840">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.4789916" vertical-offset="0" max-vertical-offset="3840">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -118,8 +124,8 @@
       <file leaf-file-name="_app.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/scss/_app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="36.875" vertical-offset="1485" max-vertical-offset="4140">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.96" vertical-offset="747" max-vertical-offset="4230">
+              <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="64" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -147,10 +153,10 @@
         <option value="$PROJECT_DIR$/dev/jsx/date.jsx" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/dev/js/app.js" />
-        <option value="$PROJECT_DIR$/dev/scss/_app.scss" />
         <option value="$PROJECT_DIR$/dev/index.html" />
-        <option value="$PROJECT_DIR$/dev/jsx/masthead.jsx" />
         <option value="$PROJECT_DIR$/dev/jsx/menu.jsx" />
+        <option value="$PROJECT_DIR$/dev/scss/_app.scss" />
+        <option value="$PROJECT_DIR$/dev/jsx/masthead.jsx" />
       </list>
     </option>
   </component>
@@ -553,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/scss/_app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="36.875" vertical-offset="1485" max-vertical-offset="4140">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/react.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.958333" vertical-offset="211" max-vertical-offset="855">
@@ -569,26 +567,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/index.html">
+    <entry file="file://$PROJECT_DIR$/dev/jsx/menu.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="3840">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="23" />
+        <state vertical-scroll-proportion="-6.5" vertical-offset="356" max-vertical-offset="1785">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/scss/_app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.96" vertical-offset="747" max-vertical-offset="4230">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="64" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/jsx/masthead.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.26923" vertical-offset="294" max-vertical-offset="1020">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        <state vertical-scroll-proportion="-10.961538" vertical-offset="285" max-vertical-offset="1035">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/jsx/menu.jsx">
+    <entry file="file://$PROJECT_DIR$/dev/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22937293" vertical-offset="416" max-vertical-offset="1710">
-          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.4789916" vertical-offset="0" max-vertical-offset="3840">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
