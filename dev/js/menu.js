@@ -61,7 +61,6 @@ var Menu = React.createClass({displayName: 'Menu',
             var divStyle= {
                 display: 'block',
                 position: 'relative',
-//            top: '170px',
                 width: document.getElementById("mainRow").clientWidth+"px",
                 'background': 'white'
             }
@@ -69,7 +68,7 @@ var Menu = React.createClass({displayName: 'Menu',
                 'float': 'left',
                 'width': width+"px",
                 'padding': '10px 5px',
-                'borderTop': '1px solid black',
+                'borderTop': '0',
                 'borderBottom': '1px solid black'
             }
         }
@@ -98,7 +97,7 @@ var Menu = React.createClass({displayName: 'Menu',
                     ), 
                     React.DOM.li({style: liStyle}, React.DOM.a({href: "#speed"}, "-", this.props.scrollTop)
                     ), 
-                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#source"})
+                    React.DOM.li({style: liStyle}, React.DOM.a({href: "#source"}, Math.round(this.props.scrollTop*1.2))
                     )
                 )
             )
